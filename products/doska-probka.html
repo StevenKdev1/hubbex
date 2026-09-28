@@ -1,0 +1,138 @@
+---
+layout: default
+title: Дошка коркова (пробкова) в алюмінієві рамці TM Ukrboards — ДошкаМаркет
+---
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дошка коркова (пробкова) TM Ukrboards</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/hubbex/" class="text-2xl font-bold text-blue-600">ДошкаМаркет</a>
+      <a href="https://t.me/your_telegram_username" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition">
+        Замовлення в Telegram
+      </a>
+    </div>
+  </header>
+
+  <div class="max-w-7xl mx-auto px-4 py-4 text-sm text-gray-500">
+    <a href="/hubbex/" class="hover:text-blue-600">Головна</a> / 
+    <a href="/hubbex/#boards" class="hover:text-blue-600">Коркові дошки</a> / 
+    <span class="text-gray-800 font-medium">Дошка коркова</span>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="bg-white rounded-2xl shadow-sm border p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <div>
+        <div class="w-full h-80 bg-amber-100 rounded-xl flex items-center justify-center text-7xl border text-amber-800 font-serif">
+          📌
+        </div>
+        <p class="text-xs text-center text-gray-400 mt-3">Натуральне коркове покриття високої щільності TM Ukrboards</p>
+      </div>
+
+      <div class="flex flex-col justify-between">
+        <div>
+          <div class="flex items-center space-x-3 mb-2">
+            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">В наявності</span>
+            <span class="text-xs text-gray-500 font-mono">Артикул: <strong id="skuDisplay" class="text-gray-700">UB60х90C</strong></span>
+          </div>
+
+          <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+            Дошка коркова (пробкова) інформаційна
+          </h1>
+          
+          <p class="text-sm text-gray-600 mb-6">
+            Виготовлена з натурального дрібнозернистого корка. Поверхня «самовідновлюється» після виймання силових кнопок та шпильок. Міцний алюмінієвий профіль із захисними кутиками.
+          </p>
+
+          <div class="mb-6">
+            <label class="block text-sm font-semibold text-gray-700 mb-3">Оберіть розмір дошки:</label>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2" id="sizeContainer">
+              <button onclick="selectSize(this, 651, '45х60 см', 'UB45x60C')" class="size-btn border rounded-lg p-2 text-xs font-medium text-center hover:border-blue-500 transition">45 х 60 см<br><span class="text-gray-500">651 грн</span></button>
+              <button onclick="selectSize(this, 976, '60х90 см', 'UB60х90C')" class="size-btn border-2 border-blue-600 bg-blue-50 rounded-lg p-2 text-xs font-bold text-center">60 х 90 см<br><span class="text-blue-600">976 грн</span></button>
+              <button onclick="selectSize(this, 1121, '65х100 см', 'UB65x100C')" class="size-btn border rounded-lg p-2 text-xs font-medium text-center hover:border-blue-500 transition">65 х 100 см<br><span class="text-gray-500">1 121 грн</span></button>
+              <button onclick="selectSize(this, 1302, '75х100 см', 'UB75x100C')" class="size-btn border rounded-lg p-2 text-xs font-medium text-center hover:border-blue-500 transition">75 х 100 см<br><span class="text-gray-500">1 302 грн</span></button>
+              <button onclick="selectSize(this, 1735, '90х120 см', 'UB90x120C')" class="size-btn border rounded-lg p-2 text-xs font-medium text-center hover:border-blue-500 transition">90 х 120 см<br><span class="text-gray-500">1 735 грн</span></button>
+              <button onclick="selectSize(this, 2241, '100х150 см', 'UB100x150C')" class="size-btn border rounded-lg p-2 text-xs font-medium text-center hover:border-blue-500 transition">100 х 150 см<br><span class="text-gray-500">2 241 грн</span></button>
+              <button onclick="selectSize(this, 2928, '100х200 см', 'UB100x200C')" class="size-btn border rounded-lg p-2 text-xs font-medium text-center hover:border-blue-500 transition">100 х 200 см<br><span class="text-gray-500">2 928 грн</span></button>
+              <button onclick="selectSize(this, 3181, '120х180 см', 'UB120x180C')" class="size-btn border rounded-lg p-2 text-xs font-medium text-center hover:border-blue-500 transition">120 х 180 см<br><span class="text-gray-500">3 181 грн</span></button>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <span class="text-xs text-gray-500 block">Ціна товару:</span>
+            <span id="priceDisplay" class="text-3xl font-extrabold text-blue-600">976 грн</span>
+          </div>
+        </div>
+
+        <div class="bg-blue-50 p-4 rounded-xl border border-blue-200">
+          <h3 class="font-bold text-sm text-gray-800 mb-3">Швидке замовлення (без реєстрації)</h3>
+          
+          <div class="space-y-3">
+            <input type="text" id="custName" placeholder="Ваше ім'я" class="w-full p-2.5 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <input type="tel" id="custPhone" placeholder="+380 (XX) XXX-XX-XX" class="w-full p-2.5 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            
+            <button onclick="sendToTelegram()" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition flex items-center justify-center space-x-2 shadow-md">
+              <span>✈️</span>
+              <span>Замовити в Telegram</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let currentPrice = 976;
+    let currentSize = '60х90 см';
+    let currentSKU = 'UB60х90C';
+
+    function selectSize(btnElement, price, size, sku) {
+      currentPrice = price;
+      currentSize = size;
+      currentSKU = sku;
+
+      document.querySelectorAll('.size-btn').forEach(b => {
+        b.className = 'size-btn border rounded-lg p-2 text-xs font-medium text-center hover:border-blue-500 transition';
+        b.querySelectorAll('span')[0].className = 'text-gray-500';
+      });
+
+      btnElement.className = 'size-btn border-2 border-blue-600 bg-blue-50 rounded-lg p-2 text-xs font-bold text-center';
+      btnElement.querySelectorAll('span')[0].className = 'text-blue-600';
+
+      document.getElementById('priceDisplay').innerText = Number(price).toLocaleString('uk-UA') + ' грн';
+      document.getElementById('skuDisplay').innerText = sku;
+    }
+
+    function sendToTelegram() {
+      const name = document.getElementById('custName').value;
+      const phone = document.getElementById('custPhone').value;
+
+      if (!name || !phone) {
+        alert('Будь ласка, введіть ім\'я та номер телефону!');
+        return;
+      }
+
+      const text = `📦 *НОВЕ ЗАМОВЛЕННЯ!*%0A` +
+                   `*Товар:* Дошка коркова TM Ukrboards%0A` +
+                   `*Артикул:* ${currentSKU}%0A` +
+                   `*Розмір:* ${currentSize}%0A` +
+                   `*Ціна:* ${currentPrice} грн%0A%0A` +
+                   `👤 *Клієнт:* ${name}%0A` +
+                   `📞 *Телефон:* ${phone}`;
+
+      const telegramUrl = `https://t.me/your_telegram_username?text=${text}`;
+      window.open(telegramUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
