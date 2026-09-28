@@ -1,194 +1,195 @@
 ---
 layout: default
-title: Главная — Продажа досок, школьной и офисной мебели
+title: Головна — Продаж дошок, шкільних та офісних меблів
 ---
 
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Интернет-магазин досок и школьной мебели</title>
+  <title>Інтернет-магазин дошок та шкільних меблів</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
 
-  <!-- Шапка сайта (Header) -->
+  <!-- Шапка сайту (Header) -->
   <header class="bg-white shadow-sm sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="/" class="text-2xl font-bold text-blue-600">ДоскаМаркет</a>
+      <a href="/hubbex/" class="text-2xl font-bold text-blue-600">ДошкаМаркет</a>
       <nav class="hidden md:flex space-x-6 font-medium text-gray-600">
-        <a href="#boards" class="hover:text-blue-600 text-blue-600 font-semibold">Доски (Приоритет)</a>
-        <a href="#school" class="hover:text-blue-600">Школьная мебель</a>
-        <a href="#kindergarten" class="hover:text-blue-600">Детский сад</a>
-        <a href="#generators" class="hover:text-blue-600">Генераторы</a>
-        <a href="#furniture" class="hover:text-blue-600">Мебель</a>
+        <a href="#boards" class="hover:text-blue-600 text-blue-600 font-semibold">Дошки (Пріоритет)</a>
+        <a href="#school" class="hover:text-blue-600">Шкільні меблі</a>
+        <a href="#kindergarten" class="hover:text-blue-600">Дитячий садок</a>
+        <a href="#generators" class="hover:text-blue-600">Генератори</a>
+        <a href="#furniture" class="hover:text-blue-600">Меблі</a>
       </nav>
-      <a href="https://t.me/your_telegram_username" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-        Быстрый заказ в Telegram
+      <a href="https://t.me/your_telegram_username" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition">
+        Швидке замовлення в Telegram
       </a>
     </div>
   </header>
 
-  <!-- Главный баннер (Hero section) -->
+  <!-- Головний банер (Hero section) -->
   <section class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white py-16 px-4">
     <div class="max-w-5xl mx-auto text-center">
       <h1 class="text-3xl md:text-5xl font-extrabold mb-4">
-        Школьные доски, интерактивное оборудование и мебель
+        Шкільні дошки, інтерактивне обладнання та меблі
       </h1>
       <p class="text-lg md:text-xl text-blue-100 mb-8">
-        Качественное оборудование для школ, офисов и детских садов с доставкой по всей Украине.
+        Якісне обладнання для шкіл, офісів та дитячих садків з доставкою по всій Україні.
       </p>
       <a href="#boards" class="inline-block bg-amber-400 text-gray-900 font-bold px-8 py-3 rounded-full hover:bg-amber-300 transition shadow-lg">
-        Смотреть каталог досок 👇
+        Дивитися каталог дошок 👇
       </a>
     </div>
   </section>
 
   <main class="max-w-7xl mx-auto px-4 py-12 space-y-16">
 
-    <!-- 1. ПРИОРИТЕТНАЯ СЕКЦИЯ: ДОСКИ И ИНТЕРАКТИВ -->
+    <!-- 1. ПРІОРИТЕТНА СЕКЦІЯ: ДОШКИ ТА ІНТЕРАКТИВ -->
     <section id="boards">
       <div class="flex items-center space-x-3 mb-6 border-b-2 border-blue-600 pb-2">
         <span class="text-2xl">🎓</span>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Доски и оборудование (Главное)</h2>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Дошки та обладнання (Головне)</h2>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         
-        <a href="/category/chalkboards" class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md border hover:border-blue-500 transition group">
+        <a href="/hubbex/products/doska-marker" class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md border hover:border-blue-500 transition group">
           <div class="h-36 bg-gray-100 rounded-lg mb-4 flex items-center justify-center text-4xl group-hover:scale-105 transition transform">🟩</div>
-          <h3 class="font-bold text-lg text-gray-800 group-hover:text-blue-600">Доски для мела</h3>
-          <p class="text-sm text-gray-500 mt-1">Классические школьные зеленые и черные доски</p>
+          <h3 class="font-bold text-lg text-gray-800 group-hover:text-blue-600">Дошки для крейди</h3>
+          <p class="text-sm text-gray-500 mt-1">Класичні шкільні зелені та чорні дошки</p>
         </a>
 
-        <a href="/category/markerboards" class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md border hover:border-blue-500 transition group">
+        <!-- Посилання ведет на створену картку товару -->
+        <a href="/hubbex/products/doska-marker" class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md border hover:border-blue-500 transition group">
           <div class="h-36 bg-gray-100 rounded-lg mb-4 flex items-center justify-center text-4xl group-hover:scale-105 transition transform">⬜</div>
-          <h3 class="font-bold text-lg text-gray-800 group-hover:text-blue-600">Доски для маркера</h3>
-          <p class="text-sm text-gray-500 mt-1">Белые магнитные сухостираемые поверхности</p>
+          <h3 class="font-bold text-lg text-gray-800 group-hover:text-blue-600">Дошки для маркера</h3>
+          <p class="text-sm text-gray-500 mt-1">Білі магнітні сухостиральні поверхні</p>
         </a>
 
-        <a href="/category/combo-boards" class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md border hover:border-blue-500 transition group">
+        <a href="/hubbex/products/doska-marker" class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md border hover:border-blue-500 transition group">
           <div class="h-36 bg-gray-100 rounded-lg mb-4 flex items-center justify-center text-4xl group-hover:scale-105 transition transform">🔄</div>
-          <h3 class="font-bold text-lg text-gray-800 group-hover:text-blue-600">Комбинированные (Маркер / Мел)</h3>
-          <p class="text-sm text-gray-500 mt-1">Универсальные секционные доски</p>
+          <h3 class="font-bold text-lg text-gray-800 group-hover:text-blue-600">Комбіновані (Маркер / Крейда)</h3>
+          <p class="text-sm text-gray-500 mt-1">Універсальні секційні дошки</p>
         </a>
 
-        <a href="/category/cork-marker" class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md border hover:border-blue-500 transition group">
+        <a href="/hubbex/products/doska-marker" class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md border hover:border-blue-500 transition group">
           <div class="h-36 bg-gray-100 rounded-lg mb-4 flex items-center justify-center text-4xl group-hover:scale-105 transition transform">📌</div>
           <h3 class="font-bold text-lg text-gray-800 group-hover:text-blue-600">Пробка / Маркер</h3>
-          <p class="text-sm text-gray-500 mt-1">Для заметок на кнопках и маркерных записей</p>
+          <p class="text-sm text-gray-500 mt-1">Для нотаток на кнопках та маркерних записів</p>
         </a>
 
-        <a href="/category/reversing-boards" class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md border hover:border-blue-500 transition group">
+        <a href="/hubbex/products/doska-marker" class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md border hover:border-blue-500 transition group">
           <div class="h-36 bg-gray-100 rounded-lg mb-4 flex items-center justify-center text-4xl group-hover:scale-105 transition transform">🔀</div>
-          <h3 class="font-bold text-lg text-gray-800 group-hover:text-blue-600">Оборотные доски</h3>
-          <p class="text-sm text-gray-500 mt-1">Двусторонние поворотные на колесах</p>
+          <h3 class="font-bold text-lg text-gray-800 group-hover:text-blue-600">Оборотні дошки</h3>
+          <p class="text-sm text-gray-500 mt-1">Двосторонні поворотні дошки на колесах</p>
         </a>
 
-        <a href="/category/flipcharts" class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md border hover:border-blue-500 transition group">
+        <a href="/hubbex/products/doska-marker" class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md border hover:border-blue-500 transition group">
           <div class="h-36 bg-gray-100 rounded-lg mb-4 flex items-center justify-center text-4xl group-hover:scale-105 transition transform">📋</div>
-          <h3 class="font-bold text-lg text-gray-800 group-hover:text-blue-600">Флипчарты</h3>
-          <p class="text-sm text-gray-500 mt-1">Мобильные доски для презентаций и тренингов</p>
+          <h3 class="font-bold text-lg text-gray-800 group-hover:text-blue-600">Фліпчарти</h3>
+          <p class="text-sm text-gray-500 mt-1">Мобільні дошки для презентацій та тренінгів</p>
         </a>
 
-        <a href="/category/corkboards" class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md border hover:border-blue-500 transition group">
+        <a href="/hubbex/products/doska-marker" class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md border hover:border-blue-500 transition group">
           <div class="h-36 bg-gray-100 rounded-lg mb-4 flex items-center justify-center text-4xl group-hover:scale-105 transition transform">🏷️</div>
-          <h3 class="font-bold text-lg text-gray-800 group-hover:text-blue-600">Пробковые доски</h3>
-          <p class="text-sm text-gray-500 mt-1">Натуральная пробка для объявлений</p>
+          <h3 class="font-bold text-lg text-gray-800 group-hover:text-blue-600">Пробкові дошки</h3>
+          <p class="text-sm text-gray-500 mt-1">Натуральна пробка для оголошень</p>
         </a>
 
-        <a href="/category/interactive" class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md border hover:border-blue-500 transition group">
+        <a href="/hubbex/products/doska-marker" class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md border hover:border-blue-500 transition group">
           <div class="h-36 bg-gray-100 rounded-lg mb-4 flex items-center justify-center text-4xl group-hover:scale-105 transition transform">🖥️</div>
-          <h3 class="font-bold text-lg text-gray-800 group-hover:text-blue-600">Интерактивные доски, панели, киоски</h3>
-          <p class="text-sm text-gray-500 mt-1">Сенсорное оборудование для современных классов</p>
+          <h3 class="font-bold text-lg text-gray-800 group-hover:text-blue-600">Інтерактивні дошки, панелі, кіоски</h3>
+          <p class="text-sm text-gray-500 mt-1">Сенсорне обладнання для сучасних класів</p>
         </a>
 
       </div>
     </section>
 
-    <!-- 2. СЕКЦИЯ: ШКОЛЬНАЯ МЕБЕЛЬ -->
+    <!-- 2. СЕКЦІЯ: ШКІЛЬНІ МЕБЛІ -->
     <section id="school">
       <div class="flex items-center space-x-3 mb-6 border-b pb-2">
         <span class="text-2xl">🏫</span>
-        <h2 class="text-2xl font-bold text-gray-900">Школьная мебель</h2>
+        <h2 class="text-2xl font-bold text-gray-900">Шкільні меблі</h2>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <a href="/category/school-desks" class="bg-white p-4 rounded-lg shadow-sm border hover:border-blue-500 transition">
-          <h3 class="font-semibold text-gray-800">Парты школьные</h3>
-          <p class="text-xs text-gray-500 mt-1">1-местные, 2-местные, регулируемые</p>
+        <a href="#" class="bg-white p-4 rounded-lg shadow-sm border hover:border-blue-500 transition">
+          <h3 class="font-semibold text-gray-800">Парти шкільні</h3>
+          <p class="text-xs text-gray-500 mt-1">1-місні, 2-місні, регульовані</p>
         </a>
-        <a href="/category/school-chairs" class="bg-white p-4 rounded-lg shadow-sm border hover:border-blue-500 transition">
-          <h3 class="font-semibold text-gray-800">Стулья и ученические лавки</h3>
-          <p class="text-xs text-gray-500 mt-1">Ростовые группы</p>
+        <a href="#" class="bg-white p-4 rounded-lg shadow-sm border hover:border-blue-500 transition">
+          <h3 class="font-semibold text-gray-800">Стільці та учнівські лави</h3>
+          <p class="text-xs text-gray-500 mt-1">Ростові групи</p>
         </a>
-        <a href="/category/cabinet-furniture" class="bg-white p-4 rounded-lg shadow-sm border hover:border-blue-500 transition">
-          <h3 class="font-semibold text-gray-800">Корпусная мебель</h3>
-          <p class="text-xs text-gray-500 mt-1">Шкафы для классов, стеллажи</p>
+        <a href="#" class="bg-white p-4 rounded-lg shadow-sm border hover:border-blue-500 transition">
+          <h3 class="font-semibold text-gray-800">Корпусні меблі</h3>
+          <p class="text-xs text-gray-500 mt-1">Шафи для класів, стелажі</p>
         </a>
-        <a href="/category/beds" class="bg-white p-4 rounded-lg shadow-sm border hover:border-blue-500 transition">
-          <h3 class="font-semibold text-gray-800">Кровати</h3>
-          <p class="text-xs text-gray-500 mt-1">Для интернатов и общежитий</p>
+        <a href="#" class="bg-white p-4 rounded-lg shadow-sm border hover:border-blue-500 transition">
+          <h3 class="font-semibold text-gray-800">Ліжка</h3>
+          <p class="text-xs text-gray-500 mt-1">Для інтернатів та гуртожитків</p>
         </a>
       </div>
     </section>
 
-    <!-- 3. СЕКЦИЯ: МЕБЕЛЬ ДЛЯ ДЕТСКОГО САДА -->
+    <!-- 3. СЕКЦІЯ: МЕБЛІ ДЛЯ ДИТЯЧОГО САДКА -->
     <section id="kindergarten">
       <div class="flex items-center space-x-3 mb-6 border-b pb-2">
         <span class="text-2xl">🧸</span>
-        <h2 class="text-2xl font-bold text-gray-900">Мебель для детского сада</h2>
+        <h2 class="text-2xl font-bold text-gray-900">Меблі для дитячого садка</h2>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-        <a href="/category/kindergarten-tables" class="bg-white p-3 rounded-lg shadow-sm border hover:border-blue-500 transition text-center">
+        <a href="#" class="bg-white p-3 rounded-lg shadow-sm border hover:border-blue-500 transition text-center">
           <span class="block text-xl mb-1">🪑</span>
-          <span class="font-medium text-sm text-gray-800">Столы</span>
+          <span class="font-medium text-sm text-gray-800">Столи</span>
         </a>
-        <a href="/category/kindergarten-chairs" class="bg-white p-3 rounded-lg shadow-sm border hover:border-blue-500 transition text-center">
+        <a href="#" class="bg-white p-3 rounded-lg shadow-sm border hover:border-blue-500 transition text-center">
           <span class="block text-xl mb-1">🪑</span>
-          <span class="font-medium text-sm text-gray-800">Стулья</span>
+          <span class="font-medium text-sm text-gray-800">Стільці</span>
         </a>
-        <a href="/category/kindergarten-walls" class="bg-white p-3 rounded-lg shadow-sm border hover:border-blue-500 transition text-center">
+        <a href="#" class="bg-white p-3 rounded-lg shadow-sm border hover:border-blue-500 transition text-center">
           <span class="block text-xl mb-1">🧱</span>
-          <span class="font-medium text-sm text-gray-800">Стенки</span>
+          <span class="font-medium text-sm text-gray-800">Стінки</span>
         </a>
-        <a href="/category/play-furniture" class="bg-white p-3 rounded-lg shadow-sm border hover:border-blue-500 transition text-center">
+        <a href="#" class="bg-white p-3 rounded-lg shadow-sm border hover:border-blue-500 transition text-center">
           <span class="block text-xl mb-1">🎨</span>
-          <span class="font-medium text-sm text-gray-800">Игровая мебель</span>
+          <span class="font-medium text-sm text-gray-800">Ігрові меблі</span>
         </a>
-        <a href="/category/wall-bars" class="bg-white p-3 rounded-lg shadow-sm border hover:border-blue-500 transition text-center">
+        <a href="#" class="bg-white p-3 rounded-lg shadow-sm border hover:border-blue-500 transition text-center">
           <span class="block text-xl mb-1">🪜</span>
-          <span class="font-medium text-sm text-gray-800">Шведские стенки</span>
+          <span class="font-medium text-sm text-gray-800">Шведські стінки</span>
         </a>
-        <a href="/category/kindergarten-beds" class="bg-white p-3 rounded-lg shadow-sm border hover:border-blue-500 transition text-center">
+        <a href="#" class="bg-white p-3 rounded-lg shadow-sm border hover:border-blue-500 transition text-center">
           <span class="block text-xl mb-1">🛏️</span>
-          <span class="font-medium text-sm text-gray-800">Кровати</span>
+          <span class="font-medium text-sm text-gray-800">Ліжка</span>
         </a>
       </div>
     </section>
 
-    <!-- 4. СЕКЦИЯ: ГЕНЕРАТОРЫ И ОБЩАЯ МЕБЕЛЬ -->
+    <!-- 4. СЕКЦІЯ: ГЕНЕРАТОРИ ТА ЗАГАЛЬНІ МЕБЛІ -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       
       <section id="generators" class="bg-amber-50 p-6 rounded-2xl border border-amber-200">
         <div class="flex items-center space-x-3 mb-4">
           <span class="text-2xl">⚡</span>
-          <h2 class="text-xl font-bold text-gray-900">Генераторы электрического тока</h2>
+          <h2 class="text-xl font-bold text-gray-900">Генератори електричного струму</h2>
         </div>
-        <p class="text-sm text-gray-600 mb-4">Автономное питание для учебных заведений, офисов и дома.</p>
-        <a href="/category/generators" class="inline-block bg-amber-500 text-white text-sm font-bold px-4 py-2 rounded-lg hover:bg-amber-600 transition">
-          Перейти к генераторам
+        <p class="text-sm text-gray-600 mb-4">Автономне живлення для навчальних закладів, офісів та дому.</p>
+        <a href="#" class="inline-block bg-amber-500 text-white text-sm font-bold px-4 py-2 rounded-lg hover:bg-amber-600 transition">
+          Перейти до генераторів
         </a>
       </section>
 
       <section id="furniture" class="bg-gray-100 p-6 rounded-2xl border border-gray-200">
         <div class="flex items-center space-x-3 mb-4">
           <span class="text-2xl">🏢</span>
-          <h2 class="text-xl font-bold text-gray-900">Офисная и корпусная мебель</h2>
+          <h2 class="text-xl font-bold text-gray-900">Офісні та корпусні меблі</h2>
         </div>
-        <p class="text-sm text-gray-600 mb-4">Офисные кресла, рабочие стулья, шкафы и столы.</p>
-        <a href="/category/office-furniture" class="inline-block bg-gray-800 text-white text-sm font-bold px-4 py-2 rounded-lg hover:bg-gray-900 transition">
-          Смотреть мебель
+        <p class="text-sm text-gray-600 mb-4">Офісні крісла, робочі стільці, шафи та столи.</p>
+        <a href="#" class="inline-block bg-gray-800 text-white text-sm font-bold px-4 py-2 rounded-lg hover:bg-gray-900 transition">
+          Дивитися меблі
         </a>
       </section>
 
@@ -198,8 +199,8 @@ title: Главная — Продажа досок, школьной и офи�
 
   <footer class="bg-gray-900 text-gray-400 py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 text-center text-sm">
-      <p>© ДоскаМаркет. Все права защищены. Доставка по всей Украине.</p>
-      <p class="mt-2">Быстрый заказ через Telegram / Viber</p>
+      <p>© ДошкаМаркет. Всі права захищені. Доставка по всій Україні.</p>
+      <p class="mt-2">Швидке замовлення через Telegram / Viber</p>
     </div>
   </footer>
 
