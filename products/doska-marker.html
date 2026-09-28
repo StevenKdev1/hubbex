@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Дошка сухостиральна магнітна для маркера — ДошкаМаркет
+title: Дошка сухостиральна магнітна для маркера TM Ukrboards — ДошкаМаркет
 ---
 
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ title: Дошка сухостиральна магнітна для марке�
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Дошка сухостиральна магнітна для маркера</title>
+  <title>Дошка сухостиральна магнітна для маркера TM Ukrboards</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
@@ -16,7 +16,7 @@ title: Дошка сухостиральна магнітна для марке�
   <!-- Шапка -->
   <header class="bg-white shadow-sm sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="/" class="text-2xl font-bold text-blue-600">ДошкаМаркет</a>
+      <a href="/hubbex/" class="text-2xl font-bold text-blue-600">ДошкаМаркет</a>
       <a href="https://t.me/your_telegram_username" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition">
         Замовлення в Telegram
       </a>
@@ -25,8 +25,8 @@ title: Дошка сухостиральна магнітна для марке�
 
   <!-- Хлебные крошки -->
   <div class="max-w-7xl mx-auto px-4 py-4 text-sm text-gray-500">
-    <a href="/" class="hover:text-blue-600">Головна</a> / 
-    <a href="/#boards" class="hover:text-blue-600">Дошки для маркера</a> / 
+    <a href="/hubbex/" class="hover:text-blue-600">Головна</a> / 
+    <a href="/hubbex/#boards" class="hover:text-blue-600">Дошки для маркера</a> / 
     <span class="text-gray-800 font-medium">Дошка сухостиральна магнітна</span>
   </div>
 
@@ -36,52 +36,60 @@ title: Дошка сухостиральна магнітна для марке�
       
       <!-- Фото товара -->
       <div>
-        <div class="w-full h-80 bg-gray-100 rounded-xl flex items-center justify-center text-6xl border">
+        <div class="w-full h-80 bg-gray-100 rounded-xl flex items-center justify-center text-7xl border">
           ⬜
         </div>
-        <p class="text-xs text-center text-gray-400 mt-2">Магнітно-маркерна поверхня в алюмінієвому профілі</p>
+        <p class="text-xs text-center text-gray-400 mt-3">Магнітно-маркерна поверхня в алюмінієвому профілі TM Ukrboards</p>
       </div>
 
-      <!-- Информация и заказ -->
+      <!-- Информация и выбор размера -->
       <div class="flex flex-col justify-between">
         <div>
-          <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded mb-2">В наявності</span>
-          <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+          <div class="flex items-center space-x-3 mb-2">
+            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">В наявності</span>
+            <span class="text-xs text-gray-500 font-mono">Артикул: <strong id="skuDisplay" class="text-gray-700">UB60x90W</strong></span>
+          </div>
+
+          <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
             Дошка сухостиральна магнітна для маркера
           </h1>
           
           <p class="text-sm text-gray-600 mb-6">
-            Призначена для письма сухостирально-маркерними фломастерами та прикріплення інформації магнітами. Алюмінієва рамка з захисними кутиками.
+            Призначена для письма сухостирально-маркерними фломастерами та прикріплення інформації магнітами. Алюмінієва рамка з захисними пластиковими кутиками. До комплекту входить поличка для маркерів.
           </p>
 
           <!-- Выбор размера -->
           <div class="mb-6">
-            <label class="block text-sm font-semibold text-gray-700 mb-2">Оберіть розмір дошки:</label>
-            <select id="sizeSelect" onchange="updatePrice()" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none bg-gray-50">
-              <option value="1200" data-size="50х70 см">50 х 70 см — 1 200 грн</option>
-              <option value="1800" data-size="60х90 см" selected>60 х 90 см — 1 800 грн</option>
-              <option value="2500" data-size="90х120 см">90 х 120 см — 2 500 грн</option>
-              <option value="3400" data-size="100х150 см">100 х 150 см — 3 400 грн</option>
-              <option value="4800" data-size="100х200 см">100 х 200 см — 4 800 грн</option>
-            </select>
+            <label class="block text-sm font-semibold text-gray-700 mb-3">Оберіть розмір дошки:</label>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2" id="sizeContainer">
+              <button onclick="selectSize(this, 633, '35х50 см', 'UB35x50W')" class="size-btn border rounded-lg p-2 text-xs font-medium text-center hover:border-blue-500 transition">35 х 50 см<br><span class="text-gray-500">633 грн</span></button>
+              <button onclick="selectSize(this, 770, '45х60 см', 'UB45х600W')" class="size-btn border rounded-lg p-2 text-xs font-medium text-center hover:border-blue-500 transition">45 х 60 см<br><span class="text-gray-500">770 грн</span></button>
+              <button onclick="selectSize(this, 1139, '60х90 см', 'UB60x90W')" class="size-btn border-2 border-blue-600 bg-blue-50 rounded-lg p-2 text-xs font-bold text-center">60 х 90 см<br><span class="text-blue-600">1 139 грн</span></button>
+              <button onclick="selectSize(this, 1374, '65х100 см', 'UB65x100W')" class="size-btn border rounded-lg p-2 text-xs font-medium text-center hover:border-blue-500 transition">65 х 100 см<br><span class="text-gray-500">1 374 грн</span></button>
+              <button onclick="selectSize(this, 1591, '75х100 см', 'UB75x100W')" class="size-btn border rounded-lg p-2 text-xs font-medium text-center hover:border-blue-500 transition">75 х 100 см<br><span class="text-gray-500">1 591 грн</span></button>
+              <button onclick="selectSize(this, 2260, '90х120 см', 'UB90x120W')" class="size-btn border rounded-lg p-2 text-xs font-medium text-center hover:border-blue-500 transition">90 х 120 см<br><span class="text-gray-500">2 260 грн</span></button>
+              <button onclick="selectSize(this, 2961, '100х150 см', 'UB100x150W')" class="size-btn border rounded-lg p-2 text-xs font-medium text-center hover:border-blue-500 transition">100 х 150 см<br><span class="text-gray-500">2 961 грн</span></button>
+              <button onclick="selectSize(this, 3952, '100х200 см', 'UB100x200W')" class="size-btn border rounded-lg p-2 text-xs font-medium text-center hover:border-blue-500 transition">100 х 200 см<br><span class="text-gray-500">3 952 грн</span></button>
+              <button onclick="selectSize(this, 4291, '120х180 см', 'UB120x180W')" class="size-btn border rounded-lg p-2 text-xs font-medium text-center hover:border-blue-500 transition">120 х 180 см<br><span class="text-gray-500">4 291 грн</span></button>
+            </div>
           </div>
 
-          <!-- Цена -->
+          <!-- Отображение текущей цены -->
           <div class="mb-6">
-            <span class="text-sm text-gray-500 block">Ціна:</span>
-            <span id="priceDisplay" class="text-3xl font-extrabold text-blue-600">1 800 грн</span>
+            <span class="text-xs text-gray-500 block">Ціна товару:</span>
+            <span id="priceDisplay" class="text-3xl font-extrabold text-blue-600">1 139 грн</span>
           </div>
         </div>
 
         <!-- Форма быстрого заказа -->
-        <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+        <div class="bg-blue-50 p-4 rounded-xl border border-blue-200">
           <h3 class="font-bold text-sm text-gray-800 mb-3">Швидке замовлення (без реєстрації)</h3>
           
           <div class="space-y-3">
-            <input type="text" id="custName" placeholder="Ваше ім'я" class="w-full p-2.5 text-sm border rounded-lg">
-            <input type="tel" id="custPhone" placeholder="+380 (XX) XXX-XX-XX" class="w-full p-2.5 text-sm border rounded-lg">
+            <input type="text" id="custName" placeholder="Ваше ім'я" class="w-full p-2.5 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <input type="tel" id="custPhone" placeholder="+380 (XX) XXX-XX-XX" class="w-full p-2.5 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
             
-            <button onclick="sendToTelegram()" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition flex items-center justify-center space-x-2">
+            <button onclick="sendToTelegram()" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition flex items-center justify-center space-x-2 shadow-md">
               <span>✈️</span>
               <span>Замовити в Telegram</span>
             </button>
@@ -93,33 +101,44 @@ title: Дошка сухостиральна магнітна для марке�
   </main>
 
   <script>
-    function updatePrice() {
-      const select = document.getElementById('sizeSelect');
-      const price = select.value;
+    let currentPrice = 1139;
+    let currentSize = '60х90 см';
+    let currentSKU = 'UB60x90W';
+
+    function selectSize(btnElement, price, size, sku) {
+      currentPrice = price;
+      currentSize = size;
+      currentSKU = sku;
+
+      document.querySelectorAll('.size-btn').forEach(b => {
+        b.className = 'size-btn border rounded-lg p-2 text-xs font-medium text-center hover:border-blue-500 transition';
+        b.querySelectorAll('span')[0].className = 'text-gray-500';
+      });
+
+      btnElement.className = 'size-btn border-2 border-blue-600 bg-blue-50 rounded-lg p-2 text-xs font-bold text-center';
+      btnElement.querySelectorAll('span')[0].className = 'text-blue-600';
+
       document.getElementById('priceDisplay').innerText = Number(price).toLocaleString('uk-UA') + ' грн';
+      document.getElementById('skuDisplay').innerText = sku;
     }
 
     function sendToTelegram() {
       const name = document.getElementById('custName').value;
       const phone = document.getElementById('custPhone').value;
-      const select = document.getElementById('sizeSelect');
-      const sizeText = select.options[select.selectedIndex].getAttribute('data-size');
-      const price = select.value;
 
       if (!name || !phone) {
         alert('Будь ласка, введіть ім\'я та номер телефону!');
         return;
       }
 
-      // Формируем текст для отправки
       const text = `📦 *НОВЕ ЗАМОВЛЕННЯ!*%0A` +
-                   `*Товар:* Дошка магнітно-маркерна%0A` +
-                   `*Розмір:* ${sizeText}%0A` +
-                   `*Ціна:* ${price} грн%0A%0A` +
+                   `*Товар:* Дошка магнітно-маркерна TM Ukrboards%0A` +
+                   `*Артикул:* ${currentSKU}%0A` +
+                   `*Розмір:* ${currentSize}%0A` +
+                   `*Ціна:* ${currentPrice} грн%0A%0A` +
                    `👤 *Клієнт:* ${name}%0A` +
                    `📞 *Телефон:* ${phone}`;
 
-      // Замените YOUR_TELEGRAM_USERNAME на ваш ник в телеграме или логику бота
       const telegramUrl = `https://t.me/your_telegram_username?text=${text}`;
       window.open(telegramUrl, '_blank');
     }
