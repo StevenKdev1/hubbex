@@ -1,0 +1,136 @@
+---
+layout: default
+title: Фліпчарти офісні та навчальні TM Ukrboards — ДошкаМаркет
+---
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фліпчарти TM Ukrboards</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/hubbex/" class="text-2xl font-bold text-blue-600">ДошкаМаркет</a>
+      <a href="https://t.me/your_telegram_username" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition">
+        Замовлення в Telegram
+      </a>
+    </div>
+  </header>
+
+  <div class="max-w-7xl mx-auto px-4 py-4 text-sm text-gray-500">
+    <a href="/hubbex/" class="hover:text-blue-600">Головна</a> / 
+    <a href="/hubbex/#boards" class="hover:text-blue-600">Фліпчарти</a> / 
+    <span class="text-gray-800 font-medium">Фліпчарт офісний</span>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="bg-white rounded-2xl shadow-sm border p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <div>
+        <div class="w-full h-80 bg-gray-100 rounded-xl flex items-center justify-center text-7xl border">
+          📋
+        </div>
+        <p class="text-xs text-center text-gray-400 mt-3">Фліпчарт із тримачем для паперу та поличкою TM Ukrboards</p>
+      </div>
+
+      <div class="flex flex-col justify-between">
+        <div>
+          <div class="flex items-center space-x-3 mb-2">
+            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">В наявності</span>
+            <span class="text-xs text-gray-500 font-mono">Артикул: <strong id="skuDisplay" class="text-gray-700">UB-FT65x100W</strong></span>
+          </div>
+
+          <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+            Фліпчарт магнітний мобільний
+          </h1>
+          
+          <p class="text-sm text-gray-600 mb-6">
+            Ідеальне рішення для презентацій, тренінгів та трейнінгів. Оснащений тримачем для паперових блоків, магнітною поверхнею та притискною планкою.
+          </p>
+
+          <div class="mb-6">
+            <label class="block text-sm font-semibold text-gray-700 mb-3">Оберіть модель та тип поверхні:</label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2" id="sizeContainer">
+              <button onclick="selectSize(this, 3254, '65х100 см (Маркер, Підставка)', 'UB-F65x100W')" class="size-btn border rounded-lg p-2 text-xs font-medium text-left hover:border-blue-500 transition">65x100 см Маркер (Підставка)<br><span class="text-gray-500">3 254 грн</span></button>
+              <button onclick="selectSize(this, 3254, '65х100 см (Крейда, Підставка)', 'UB-F65x100G')" class="size-btn border rounded-lg p-2 text-xs font-medium text-left hover:border-blue-500 transition">65x100 см Крейда (Підставка)<br><span class="text-gray-500">3 254 грн</span></button>
+              <button onclick="selectSize(this, 3832, '65х100 см (Маркер, Тринога Eko)', 'UB-FT65x100W')" class="size-btn border-2 border-blue-600 bg-blue-50 rounded-lg p-2 text-xs font-bold text-left">65x100 см Маркер (Тринога)<br><span class="text-blue-600">3 832 грн</span></button>
+              <button onclick="selectSize(this, 3832, '65х100 см (Крейда, Тринога Eko)', 'UB-FT65x100G')" class="size-btn border rounded-lg p-2 text-xs font-medium text-left hover:border-blue-500 transition">65x100 см Крейда (Тринога)<br><span class="text-gray-500">3 832 грн</span></button>
+              <button onclick="selectSize(this, 4700, '75х100 см DUO Двосторонній Маркер', 'UB-F75x100W Duo')" class="size-btn border rounded-lg p-2 text-xs font-medium text-left hover:border-blue-500 transition">75x100 см DUO Маркер на колесах<br><span class="text-gray-500">4 700 грн</span></button>
+              <button onclick="selectSize(this, 5098, '75х100 см DUO Двосторонній Комбінов', 'UB-F75x100WG Duo')" class="size-btn border rounded-lg p-2 text-xs font-medium text-left hover:border-blue-500 transition">75x100 см DUO Крейда/Маркер колеса<br><span class="text-gray-500">5 098 грн</span></button>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <span class="text-xs text-gray-500 block">Ціна товару:</span>
+            <span id="priceDisplay" class="text-3xl font-extrabold text-blue-600">3 832 грн</span>
+          </div>
+        </div>
+
+        <div class="bg-blue-50 p-4 rounded-xl border border-blue-200">
+          <h3 class="font-bold text-sm text-gray-800 mb-3">Швидке замовлення (без реєстрації)</h3>
+          
+          <div class="space-y-3">
+            <input type="text" id="custName" placeholder="Ваше ім'я" class="w-full p-2.5 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <input type="tel" id="custPhone" placeholder="+380 (XX) XXX-XX-XX" class="w-full p-2.5 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            
+            <button onclick="sendToTelegram()" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition flex items-center justify-center space-x-2 shadow-md">
+              <span>✈️</span>
+              <span>Замовити в Telegram</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let currentPrice = 3832;
+    let currentSize = '65х100 см (Маркер, Тринога Eko)';
+    let currentSKU = 'UB-FT65x100W';
+
+    function selectSize(btnElement, price, size, sku) {
+      currentPrice = price;
+      currentSize = size;
+      currentSKU = sku;
+
+      document.querySelectorAll('.size-btn').forEach(b => {
+        b.className = 'size-btn border rounded-lg p-2 text-xs font-medium text-left hover:border-blue-500 transition';
+        b.querySelectorAll('span')[0].className = 'text-gray-500';
+      });
+
+      btnElement.className = 'size-btn border-2 border-blue-600 bg-blue-50 rounded-lg p-2 text-xs font-bold text-left';
+      btnElement.querySelectorAll('span')[0].className = 'text-blue-600';
+
+      document.getElementById('priceDisplay').innerText = Number(price).toLocaleString('uk-UA') + ' грн';
+      document.getElementById('skuDisplay').innerText = sku;
+    }
+
+    function sendToTelegram() {
+      const name = document.getElementById('custName').value;
+      const phone = document.getElementById('custPhone').value;
+
+      if (!name || !phone) {
+        alert('Будь ласка, введіть ім\'я та номер телефону!');
+        return;
+      }
+
+      const text = `📦 *НОВЕ ЗАМОВЛЕННЯ!*%0A` +
+                   `*Товар:* Фліпчарт TM Ukrboards%0A` +
+                   `*Артикул:* ${currentSKU}%0A` +
+                   `*Модель/Розмір:* ${currentSize}%0A` +
+                   `*Ціна:* ${currentPrice} грн%0A%0A` +
+                   `👤 *Клієнт:* ${name}%0A` +
+                   `📞 *Телефон:* ${phone}`;
+
+      const telegramUrl = `https://t.me/your_telegram_username?text=${text}`;
+      window.open(telegramUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
