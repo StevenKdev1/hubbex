@@ -1,0 +1,137 @@
+---
+layout: default
+title: Дошка обертова двостороння на колесах TM Ukrboards — ДошкаМаркет
+---
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дошка обертова двосторонняя на колесах TM Ukrboards</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/hubbex/" class="text-2xl font-bold text-blue-600">ДошкаМаркет</a>
+      <a href="https://t.me/your_telegram_username" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition">
+        Замовлення в Telegram
+      </a>
+    </div>
+  </header>
+
+  <div class="max-w-7xl mx-auto px-4 py-4 text-sm text-gray-500">
+    <a href="/hubbex/" class="hover:text-blue-600">Головна</a> / 
+    <a href="/hubbex/#boards" class="hover:text-blue-600">Обертові дошки</a> / 
+    <span class="text-gray-800 font-medium">Дошка обертова на колесах</span>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="bg-white rounded-2xl shadow-sm border p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <div>
+        <div class="w-full h-80 bg-gray-100 rounded-xl flex items-center justify-center text-7xl border">
+          🔄
+        </div>
+        <p class="text-xs text-center text-gray-400 mt-3">Двостороння поверхня 360° на мобільній підставці з коліщатками</p>
+      </div>
+
+      <div class="flex flex-col justify-between">
+        <div>
+          <div class="flex items-center space-x-3 mb-2">
+            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">В наявності</span>
+            <span class="text-xs text-gray-500 font-mono">Артикул: <strong id="skuDisplay" class="text-gray-700">UB-R90x120W</strong></span>
+          </div>
+
+          <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+            Дошка обертова двостороння на колесах
+          </h1>
+          
+          <p class="text-sm text-gray-600 mb-6">
+            Двосторонняя мобільна дошка повертається на 360 градусів з фіксацією під будь-яким кутом. Колеса оснащені фіксаторами (гальмами) для стійкості.
+          </p>
+
+          <div class="mb-6">
+            <label class="block text-sm font-semibold text-gray-700 mb-3">Оберіть розмір та тип покриття:</label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2" id="sizeContainer">
+              <button onclick="selectSize(this, 5004, '90х120 см (Маркер / Маркер)', 'UB-R90x120W')" class="size-btn border-2 border-blue-600 bg-blue-50 rounded-lg p-2 text-xs font-bold text-left">90х120 Маркер/Маркер<br><span class="text-blue-600">5 004 грн</span></button>
+              <button onclick="selectSize(this, 7231, '90х120 см (Крейда / Крейда)', 'UB-R90x120G')" class="size-btn border rounded-lg p-2 text-xs font-medium text-left hover:border-blue-500 transition">90х120 Крейда/Крейда<br><span class="text-gray-500">7 231 грн</span></button>
+              <button onclick="selectSize(this, 7231, '90х120 см (Маркер / Крейда)', 'UB-R90x120GW')" class="size-btn border rounded-lg p-2 text-xs font-medium text-left hover:border-blue-500 transition">90х120 Маркер/Крейда<br><span class="text-gray-500">7 231 грн</span></button>
+              <button onclick="selectSize(this, 8243, '100х150 см (Маркер / Маркер)', 'UB-R100x150W')" class="size-btn border rounded-lg p-2 text-xs font-medium text-left hover:border-blue-500 transition">100х150 Маркер/Маркер<br><span class="text-gray-500">8 243 грн</span></button>
+              <button onclick="selectSize(this, 8243, '100х150 см (Маркер / Крейда)', 'UB-R100х150GW')" class="size-btn border rounded-lg p-2 text-xs font-medium text-left hover:border-blue-500 transition">100х150 Маркер/Крейда<br><span class="text-gray-500">8 243 грн</span></button>
+              <button onclick="selectSize(this, 9400, '100х200 см (Маркер / Маркер)', 'UB-R100x200W')" class="size-btn border rounded-lg p-2 text-xs font-medium text-left hover:border-blue-500 transition">100х200 Маркер/Маркер<br><span class="text-gray-500">9 400 грн</span></button>
+              <button onclick="selectSize(this, 9400, '100х200 см (Маркер / Крейда)', 'UB-R100x200GW')" class="size-btn border rounded-lg p-2 text-xs font-medium text-left hover:border-blue-500 transition">100х200 Маркер/Крейда<br><span class="text-gray-500">9 400 грн</span></button>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <span class="text-xs text-gray-500 block">Ціна товару:</span>
+            <span id="priceDisplay" class="text-3xl font-extrabold text-blue-600">5 004 грн</span>
+          </div>
+        </div>
+
+        <div class="bg-blue-50 p-4 rounded-xl border border-blue-200">
+          <h3 class="font-bold text-sm text-gray-800 mb-3">Швидке замовлення (без реєстрації)</h3>
+          
+          <div class="space-y-3">
+            <input type="text" id="custName" placeholder="Ваше ім'я" class="w-full p-2.5 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <input type="tel" id="custPhone" placeholder="+380 (XX) XXX-XX-XX" class="w-full p-2.5 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            
+            <button onclick="sendToTelegram()" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition flex items-center justify-center space-x-2 shadow-md">
+              <span>✈️</span>
+              <span>Замовити в Telegram</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let currentPrice = 5004;
+    let currentSize = '90х120 см (Маркер / Маркер)';
+    let currentSKU = 'UB-R90x120W';
+
+    function selectSize(btnElement, price, size, sku) {
+      currentPrice = price;
+      currentSize = size;
+      currentSKU = sku;
+
+      document.querySelectorAll('.size-btn').forEach(b => {
+        b.className = 'size-btn border rounded-lg p-2 text-xs font-medium text-left hover:border-blue-500 transition';
+        b.querySelectorAll('span')[0].className = 'text-gray-500';
+      });
+
+      btnElement.className = 'size-btn border-2 border-blue-600 bg-blue-50 rounded-lg p-2 text-xs font-bold text-left';
+      btnElement.querySelectorAll('span')[0].className = 'text-blue-600';
+
+      document.getElementById('priceDisplay').innerText = Number(price).toLocaleString('uk-UA') + ' грн';
+      document.getElementById('skuDisplay').innerText = sku;
+    }
+
+    function sendToTelegram() {
+      const name = document.getElementById('custName').value;
+      const phone = document.getElementById('custPhone').value;
+
+      if (!name || !phone) {
+        alert('Будь ласка, введіть ім\'я та номер телефону!');
+        return;
+      }
+
+      const text = `📦 *НОВЕ ЗАМОВЛЕННЯ!*%0A` +
+                   `*Товар:* Дошка обертова TM Ukrboards%0A` +
+                   `*Артикул:* ${currentSKU}%0A` +
+                   `*Розмір/Тип:* ${currentSize}%0A` +
+                   `*Ціна:* ${currentPrice} грн%0A%0A` +
+                   `👤 *Клієнт:* ${name}%0A` +
+                   `📞 *Телефон:* ${phone}`;
+
+      const telegramUrl = `https://t.me/your_telegram_username?text=${text}`;
+      window.open(telegramUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
